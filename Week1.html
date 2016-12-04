@@ -1,0 +1,123 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<title>CS1050/CS2050 WEEK 1</title>
+		</head>
+		<body>
+			
+			<!--Title area for CS1050-->
+			<h1 align="center">CS1050</h1>
+			<h2 align="center">Topic: Command Line Basics -- Getting familiar with our enviorment</h2>
+			<hr>
+
+			<h3 align="center">Introduction</h3>
+
+			<p>Hello everyone! My name is Jeremy Warden and you were either lucky enough to be in my Lab section, or you landed in the hands of someone else... and for that I'm sorry. Together we are going to not only get through CS1050, but we are going to conqure CS1050!  It is my personal belief that this course has the ability to do one of two things with people: <b>build a high interest in technology</b> or entirely destroy any potential interest.  It is my goal to present technical information this semester in a very transparent way.  I truely feel that anyone can program, this stuff is really not that hard.  The hard thing is, getting started and learning all the techinical details. If you do not take time each week to learn each topic thouroughly, you're going to have a bad time.  This class is EXTREMELY easy if you tell yourself for 4 months, 120 days, your going to give a valid effort.  Anyways, enough with the introduction, lets get started!</p>
+
+			<h3 align="center">Our Enviorment</h3>
+
+			<p>Majority of us our entire life (including myself when I first took this course) have been working on either a Windows Operating System, or a Mac Operation System.  While Windows and Mac do an EXCELLENT job creating what is called a <b>Graphical User Interface</b> for users with non technical backgrounds to use computers, we are going to be working in a more technical enviorment in order to further understand how computers work.  We are going to introduce the Linux Operating System during the course, and more specifically the command line the Linux operating system provides us.  Throughout this Semester, if you are having issues with using various commands on the Linux Command line, I will fully expect that you utilize your resources before contacting a TA for assistance.  This class it is our goal for our students to learn how to learn independently, we have done a poor job if you cannot find majority of the answers you are looking for online.  In other words,<b>EVERYTHING</b> in this class, and I mean everything, is a google search away, you just need to discover some technical terms in order to find exactly what you are looking for.</p>
+
+			<br>
+			<p>As Mentioned above, we are going to be working with a Linux operating system during this course.  Let's go ahead and begin with acessing our working enviorment.  We could install the linux OS directly onto either a Mac or a Windows, we could create what is called a virtual machine that would allow us to run a Linux Operating System while running our current OS, but we are going to do neither of those.  You will learn more about Virtual Machines in later courses, or you can do your own research.  <b>We are going to be accessing a Server that is here on campus that is running a Linux OS on it already.</p></b>
+
+			<h3 align="center">SSH into our Server</h3>
+
+			<p>Like mentioned above, we are going to be connecting to a server that is here on campus through what is called SSH (Secure Shell).  Secure Shell provides strong authentication and secure encrypted data communications between two computers connecting over an insecure network such as the Internet.</p>
+
+			<h4>Mac -- Terminal</h4>
+
+			<p>In order to utilize SSH on a Mac, we are going to ironically use it's command line that is built in to a program called <b>Terminal</b>.  Another cool thing if you didn't know this already, is a Mac is based off of a UNIX operating system.  There are EXTREME similarties between UNIX and LINUX, so majority of the commands we will be using on our Linux server, you will be able to use in Terminal as well. I use a Mac, so I will be able to help out if you bring your Macbook to class or office hours. Here are the steps in order to connect to our server.
+
+			<ol>
+				<li>
+					<b>Open Up Terminal</b>
+					<br>
+					<br>
+					<image height="30%" width="30%" src=".images/Mac_Terminal.png"/>
+				</li>
+				<br><br>
+				<li>
+					<b>Use the following command: ssh *pawprint*@tc.rnet.missouri.edu</b>
+					<br>
+					<br>
+					<image height="40%" width="50%" src=".images/ssh_command.png"/>
+					<br>The server will require you to type your universirty password in order to access (Note, Linux security measures do not allow for passwords to be displayed as they are being typed.)</b>
+				</li>		
+			</ol>
+			</p>
+
+
+			<h4>Windows -- Putty (SSH client)</h4>
+
+			<p>In order to utilize SSH on a Windows, we are going to utilize a third party peiece of software.  This software is called <b>Putty</b>.  Just to clarify, Putty will allow us to connect to our server, that's it.  Everything else we do is going to take place via the linux command line.
+
+			<ol>
+				<li>
+					<b>Download Putty (<a href="http://www.putty.org/">http://www.putty.org/</a>)</b>
+				</li>
+				<br>
+				<li>
+					<b>Click "Download Putty" on the home page, then proceded to find the very top file called putty.exe</b>
+					<image src=".images/Putty_Download.png"/>
+				</li>	
+				<li>
+					<b>I am using a Mac, so I cannot provide futher Screenshots, however the last step is to open up what you downloaded and enter the following:</b>
+					<ul>
+						<li>
+							server/host : tc.rnet.missouri.edu
+						</li>
+						<li>
+							username : *YourPawPrint*
+						</li>
+						<li>
+							Password : *YourPassword*
+						</li>
+					</ul>
+				</li>		
+			</ol>
+			</p>
+
+			<h3 align="center">Linux Commands (Basics)</h3>
+
+			<p>There are a TON of commands that can be used at this point in order to navigate yourself around, and also perform various functionality.  With this being an introduction course, we are going to focus on a couple of core navigation commands. The commands I expect you all to know very well by the end of Lab/Week1 are the following:</p>
+
+			<ul>
+				<li>
+					<b>ls</b> (list items in directoy)
+				</li>
+				<li>
+					<b>mkdir *NameOfDir*</b> (make a new directory)
+				</li>
+				<li>
+					<b>cd *NameOfDir*</b> (change directory)
+				</li>
+				<li>
+					<b>vim *filename*</b> (open a file in the vim text editor)
+					<ul>
+						<li>
+						:wq (write Quit, or save)
+						</li>
+						<li>
+						:q! (quit without saving)
+						</li>
+						<li>
+						:*LineNumber* (Moves Curser to that line)
+						</li>
+					</ul>
+				</li>
+				<li>
+					<b>gcc -Wall -Werror</b> (compile a .c file into an executable file)
+				</li>
+				<li>
+					<b>cp *Original_File* *OtherFile*</b> (copies a file into another [A way to change name of file on command line])
+				</li>
+				<li>
+					<b>mv *File_Name* *New_Location*</b> (moves a file from one location, to another)
+				</li>
+			</ul>
+
+			<h3 align="center">Video Guidance/Commands Explained</h3>
+
+		</body>
+	</html>
