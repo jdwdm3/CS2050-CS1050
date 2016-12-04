@@ -2,7 +2,8 @@
 
 ##Jeremy Warden Syllabus/Rules
 
-1. I believe in a relaxed learning enviorment, and my Labs will be just that: Learning.  This is not a two a half hour test.
+1. I believe in a relaxed learning enviorment, and my Labs will be just that: Learning. This is not a two a half hour test.
+  
   HOWEVER, with that being said, if you fail to show up prepared (Completed and UNDESTANDING of PreLab) I will refuse to assist. There are 30 of you and one of me, I will be assisting students who put in the effort outside of class, and not those who desperately attempt to figure out a weeks worth of information within a two and a half hour window.
 
 2. ALL GRADE CHANGES AND REQUEST WILL NOT ENTERTAINED AFTER 14 CALANDER DAYS OF THAT ASSIGNMENT/LABS COMPLETION.
