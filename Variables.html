@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>CS1050 -- Data Types and Variables</title>
+		</head>
+		<body>
+			
+			<!--Title area for CS1050-->
+			<h1 align="center">Computer Science: Data Types and Variables</h1>
+			<h2 align="center">Topic: Getting familiar with data types and variables in programming</h2>
+			<hr>
+
+			<h3 align="center">Data Types</h3>
+
+			<p align ="center"><b>Integer, double, float, </b>and <b>char</b>, are all various <b>data types</b> that we will be working with in C this semester.  Each data type has different rules for what values it can and cannot contain. Lets go through some of the basics we need to know about these data types:</p>
+
+			<ol>
+				<li>
+					<b>int:</b>
+					<p>int is short for <b>integer</b>.  Integers can hold numerical values ranging from -2,147,483,648 to 2,147,483,647.  The value that an integer data type can hold must be a hole number (no decimal).
+					<br><br>We can print out integers as follows: printf("%d",x); where %d is telling printf that x is an integer.</p>
+				</li>
+				<li>
+					<b>float:</b>
+					<p>floats can hold numerical values ranging from 1.2E-38 to 3.4E+38.  The value that a float data type can be a either a whole number or a decimal. Floats are accurate to 6 decimal places
+					<br><br>We can print out floats with the following: printf("%f",x); where %f is telling printf that x is a float. We can tell printf how many decimals to print out as follows: printf("%.2f",x); where the .2 is telling printf to only display the first two decimals.</p>
+				</li>
+				<li>
+					<b>double:</b>
+					<p>doubles can hold numerical values ranging from 2.3E-308 to 1.7E+308.  The value that a double data type can be a either a whole number or a decimal. Doubles are accurate to 15 decimal places.
+					<br><br>Doubles work the same as floats, except instead of %f we use %lf.
+					</p>
+				</li>
+				<li>
+					<b>char:</b>
+					<p>char can hold single letters. Not really too much else to say about that.
+					<br><br>We can print out a character variable as follows: printf("%c",x); where %c is telling printf that x is a character.
+					</p>
+				</li>
+			</ol>
+
+			<p>Now the important thing to take from this list is knowing the following: int's hold hole numbers, floats hold hole numbers or decimals, doubles are twice(ish) the size as floats, and have the same characteristics as floats. Well and for char, it holds letters. As well as how we are going to use printf() to print the values of the variables out.</p>
+			<hr>
+
+			<h3 align="center">Variables</h3>
+
+			<p align ="center">
+			<b>Variables</b> are the core of programming.  Variables allow you to create instances of specific data types and store them for future use.  Let's go ahead and provide a quick example.  Let's say I want to write a program that adds two numbers together, and these numbers are hole numbers.  We know that since we are dealing with hole numbers that we won't be using char data type.  We also know that floats and doubles both deal with decimal values primarily.  So we are going to chose on the data type int:
+			<br><br>
+			<b>Variable Declaration</b>
+			<br><br>
+			int <b><u>numberOne</u></b>;
+			<br>
+			int <b><u>numberTwo</u></b>;
+			<br><br>
+			These two lines in C are two examples of <b>declaring</b> a varible.  We have told our program that we are going to refer to the variables <b>numberOne</b> and <b>numberTwo</b> as integers, meaning these variables can be <b>assigned</b> hole numbers.  
+			<br><br>
+			<b>Variable Assignment</b><br><br>
+			<b><u>numberOne</u></b>=10;
+			<br>
+			<b><u>numberTwo</u></b>=5;
+			<br><br>
+			We have now told our system that during our program, whenever we refer to <b>numberOne</b> we are actually refering to the number 10 (until another assignment takes place). So lets add these numbers together.
+			<br><br>
+			<b>Variable Math</b>
+			<br><br>
+			<b>int numberThree;<br>
+			numberThree = numberOne + numberTwo;
+			<br>printf("The Answer is: %d", numberThree);<br>printf("Another Way to get the answer is: %d", (numberOne + numberTwo) );</b>
+			<br><br>
+			<b>Variable Initialization</b>
+			<br><br>Whenver we are declaring our variables, we can immediately give them a starting assignment.  This starting assignment is called initializing our variable. For Example:
+			<br><br><b>int anotherNumber = 0;</b>
+			<br><br>
+			It is always a good practice to initialize our variables to a starting value.  For integers, I always initialize the number to 0, it seems like a solid default value. 
+			</p>
+			<hr><br>
+			<h3 align="center">Video: Working with variables (Basics)</h3>
+			<br>
+			<!--<iframe align="center" width="560" height="315" src="https://www.youtube.com/embed/mEeMUVluf8o" frameborder="0" allowfullscreen></iframe>-->
+		</body>
+	</html>
